@@ -165,7 +165,7 @@ body {
 .avatar {
 	border: 1px solid rgba(var(--primary-rgb), 0.1);
 	border-radius: 20px;
-	background: linear-gradient(#02050c, #051f36);
+	background: linear-gradient(var(--black-color), var(--color1));
 }
 
 /* Start Header */
@@ -367,6 +367,64 @@ body {
 }
 
 /* End About */
+
+/* Start Experience */
+
+.ex-box {
+	background: rgba(var(--primary-color-rgb), 0.1);
+	padding: 25px;
+	border-radius: 10px;
+}
+
+.ex-box .ex-left {
+	padding: 20px;
+	border-radius: 8px;
+	background: var(--primary-color);
+}
+
+.ex-box .ex-left h4 {
+	margin: 0 0 8px;
+	font-weight: 700;
+}
+
+.ex-box .ex-left span {
+	font-weight: 400;
+	font-size: 14px;
+	text-transform: uppercase;
+	color: var(--white-color);
+	opacity: 0.8;
+}
+
+.ex-box .ex-left p {
+	font-weight: 400;
+	font-size: 16px;
+	color: var(--white-color);
+	text-transform: uppercase;
+	margin: 0 0 15px;
+}
+
+.ex-box .ex-left label {
+	padding: 8px 16px;
+	border-radius: 30px;
+	background: var(--white-color);
+	color: var(--black-color);
+	font-size: 12px;
+	text-transform: uppercase;
+	line-height: 1;
+	font-weight: 600;
+}
+
+.ex-box .ex-right h5 {
+	font-weight: 700;
+	font-size: 32px;
+}
+
+.ex-box .ex-right p {
+	color: var(--white-color);
+	opacity: 0.8;
+}
+
+/* End Experience */
 
 /* Start Services */
 
@@ -594,127 +652,55 @@ body {
 
 /* End Projects */
 
-/* Start Contact Us */
+/* Start Testimonials */
 
-.contactus-section .contactus-title h5 {
-	font-weight: 500;
-	font-size: 40px;
+.testimonial-box {
+	max-width: 780px;
+	margin: 0 auto;
+	text-align: center;
 }
 
-.contactus-section .contactus-title p {
-	font-weight: 400;
-	font-size: 17px;
-	color: var(--white-color);
-	max-width: 550px;
-	opacity: 0.85;
-}
-
-.contactus-section .contact-info {
-	padding: 20px 0 40px;
-}
-
-.contactus-section .contact-info .contact-info-in {
+.testimonial-box .t-user {
+	width: 130px;
+	height: 130px;
 	display: -ms-flexbox;
 	display: flex;
-	-ms-flex-direction: column;
-	flex-direction: column;
-	padding-top: 20px;
+	margin: 0 auto 30px;
+	border-radius: 50%;
+	border: 8px solid rgba(255, 255, 255, 0.2);
 }
 
-.contactus-section .contact-info .contact-info-in label {
+.testimonial-box .t-user img {
+	width: 100%;
+	height: 100%;
+	-o-object-fit: cover;
+	object-fit: cover;
+	border-radius: 50%;
+}
+
+.testimonial-box .t-text {
+	margin-bottom: 25px;
+	font-weight: 500;
+	font-size: 18px;
+	color: var(--white-color);
+}
+
+.testimonial-box .t-person h6 {
+	font-weight: 500;
+	font-size: 20px;
+	text-transform: uppercase;
+	margin: 0 0 8px;
+}
+
+.testimonial-box .t-person span {
 	font-weight: 400;
-	font-size: 12px;
+	font-size: 16px;
+	line-height: 20px;
+	text-align: center;
 	color: var(--white-color);
-	margin: 0 0 2px;
-	text-transform: uppercase;
-	letter-spacing: 2px;
-	opacity: 0.75;
+	opacity: 0.5;
 }
 
-.contactus-section .contact-info .contact-info-in a {
-	color: var(--white-color);
-	font-size: 22px;
-	font-weight: 600;
-}
-
-.contactus-section .contactus-box {
-	border: 1px solid rgba(var(--primary-rgb), 0.2);
-}
-
-.contactus-section .contact-form .form-label {
-	color: var(--white-color);
-	margin: 0 0 4px;
-	font-size: 12px;
-	text-transform: uppercase;
-	letter-spacing: 1px;
-	opacity: 0.85;
-}
-
-.contactus-section .contact-form .form-control {
-	background: rgba(255, 255, 255, 0.05);
-	border: 1px solid rgba(255, 255, 255, 0.15);
-	color: var(--white-color);
-	box-shadow: none;
-	padding: 0.575rem 0.75rem;
-}
-
-.contactus-section .contact-form .form-control::-webkit-input-placeholder {
-	color: rgba(255, 255, 255, 0.5);
-}
-
-.contactus-section .contact-form .form-control::-moz-placeholder {
-	color: rgba(255, 255, 255, 0.5);
-	opacity: 1;
-}
-
-.contactus-section .contact-form .form-control:-ms-input-placeholder {
-	color: rgba(255, 255, 255, 0.5);
-}
-
-.contactus-section .contact-form .form-control::-ms-input-placeholder {
-	color: rgba(255, 255, 255, 0.5);
-}
-
-.contactus-section .contact-form .form-control::placeholder {
-	color: rgba(255, 255, 255, 0.5);
-}
-
-.contactus-section .contactus-form {
-	border-top: 1px solid rgba(var(--primary-rgb), 0.2);
-	background: rgba(var(--primary-rgb), 0.1);
-}
-
-/* End Contact Us */
-
-/* Start Footer */
-
-.footer {
-	padding-top: 20px;
-	padding-bottom: 20px;
-	border-top: 1px solid rgba(255, 255, 255, 0.1);
-	color: rgba(255, 255, 255, 0.75);
-	font-size: 14px;
-}
-
-
-.footer .nav a {
-	font-size: 14px;
-	color: rgba(255, 255, 255, 0.75);
-}
-
-.footer .nav a + a {
-	margin-left: 18px;
-}
-
-/* End Footer */
-
-
-
-
-
-/* ----------------------
-*   owl 
----------------------------*/
 .owl-dots {
 	text-align: center;
 	font-size: 0px;
@@ -783,113 +769,116 @@ body {
 	left: 0px;
 }
 
+/* End Testimonials */
 
+/* Start Client */
 
-
-
-/* ----------------------
-*   EXPERIENCE
----------------------------*/
-.ex-box {
-	background: rgba(var(--primary-color-rgb), 0.1);
-	padding: 25px;
-	border-radius: 10px;
+.brand-section img {
+	filter: invert(1);
 }
 
-.ex-box .ex-left {
-	padding: 20px;
-	border-radius: 8px;
-	background: var(--primary-color);
+/* End Client */
+
+/* Start Contact Us */
+
+.contact-section .contact-title h5 {
+	font-weight: 500;
+	font-size: 40px;
 }
 
-.ex-box .ex-left h4 {
-	margin: 0 0 8px;
-	font-weight: 700;
-}
-
-.ex-box .ex-left span {
+.contact-section .contact-title p {
 	font-weight: 400;
-	font-size: 14px;
-	text-transform: uppercase;
+	font-size: 17px;
 	color: var(--white-color);
-	opacity: 0.8;
+	max-width: 550px;
+	opacity: 0.85;
 }
 
-.ex-box .ex-left p {
+.contact-section .contact-info {
+	padding: 20px 0 40px;
+}
+
+.contact-section .contact-info .contact-info-in {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	padding-top: 20px;
+}
+
+.contact-section .contact-info .contact-info-in label {
 	font-weight: 400;
-	font-size: 16px;
-	color: var(--white-color);
-	text-transform: uppercase;
-	margin: 0 0 15px;
-}
-
-.ex-box .ex-left label {
-	padding: 8px 16px;
-	border-radius: 30px;
-	background: var(--white-color);
-	color: var(--black-color);
 	font-size: 12px;
+	color: var(--white-color);
+	margin: 0 0 2px;
 	text-transform: uppercase;
-	line-height: 1;
+	letter-spacing: 2px;
+	opacity: 0.75;
+}
+
+.contact-section .contact-info .contact-info-in a {
+	color: var(--white-color);
+	font-size: 22px;
 	font-weight: 600;
 }
 
-.ex-box .ex-right h5 {
-	font-weight: 700;
-	font-size: 32px;
+.contact-section .contact-box {
+	border: 1px solid rgba(var(--primary-rgb), 0.2);
 }
 
-.ex-box .ex-right p {
+.contact-section .contact-form .form-label {
 	color: var(--white-color);
-	opacity: 0.8;
-}
-
-/* ----------------------
-*   Testimonials
----------------------------*/
-.testimonial-box {
-	max-width: 780px;
-	margin: 0 auto;
-	text-align: center;
-}
-
-.testimonial-box .t-user {
-	width: 130px;
-	height: 130px;
-	display: -ms-flexbox;
-	display: flex;
-	margin: 0 auto 30px;
-	border-radius: 50%;
-	border: 8px solid rgba(255, 255, 255, 0.2);
-}
-
-.testimonial-box .t-user img {
-	width: 100%;
-	height: 100%;
-	-o-object-fit: cover;
-	object-fit: cover;
-	border-radius: 50%;
-}
-
-.testimonial-box .t-text {
-	margin-bottom: 25px;
-	font-weight: 500;
-	font-size: 18px;
-	color: var(--white-color);
-}
-
-.testimonial-box .t-person h6 {
-	font-weight: 500;
-	font-size: 20px;
+	margin: 0 0 4px;
+	font-size: 12px;
 	text-transform: uppercase;
-	margin: 0 0 8px;
+	letter-spacing: 1px;
+	opacity: 0.85;
 }
 
-.testimonial-box .t-person span {
-	font-weight: 400;
-	font-size: 16px;
-	line-height: 20px;
-	text-align: center;
+.contact-section .contact-form .form-control {
+	background: rgba(255, 255, 255, 0.05);
+	border: 1px solid rgba(255, 255, 255, 0.15);
 	color: var(--white-color);
-	opacity: 0.5;
+	box-shadow: none;
+	padding: 0.575rem 0.75rem;
 }
+
+.contact-section .contact-form .form-control::-webkit-input-placeholder {
+	color: var(--white-color);
+}
+
+.contact-section .contact-form .form-control::-moz-placeholder {
+	color: var(--white-color);
+	opacity: 1;
+}
+
+.contact-section .contact-form .form-control:-ms-input-placeholder {
+	color: var(--white-color);
+}
+
+.contact-section .contact-form .form-control::-ms-input-placeholder {
+	color: var(--white-color);
+}
+
+.contact-section .contact-form .form-control::placeholder {
+	color: var(--white-color);
+}
+
+.contact-section .contact-row {
+	border-top: 1px solid rgba(var(--primary-rgb), 0.2);
+	background: rgba(var(--primary-rgb), 0.1);
+}
+
+/* End Contact Us */
+
+/* Start Footer */
+
+.footer {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	border-top: 1px solid rgba(var(--white-color), 0.1);
+	color: var(--white-color);
+	font-size: 16px;
+}
+
+/* End Footer */
