@@ -108,7 +108,22 @@ document.addEventListener("DOMContentLoaded", function (event) {
         }, 50);
     });
 });
-  
+
+var btn = $('#button');
+
+$(window).scroll(function() {
+    if ($(window).scrollTop() > 500) {
+        btn.addClass('show');
+    } else {
+        btn.removeClass('show');
+    }
+});
+
+btn.on('click', function(e) {
+    e.preventDefault();
+    $('html, body').animate({scrollTop:0}, '300');
+});
+
 const d = new Date();
 let year = d.getFullYear();
 document.getElementById("demo").innerHTML = year;

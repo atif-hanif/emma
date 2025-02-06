@@ -10,7 +10,7 @@ $(document).ready(function () {
     new TypeIt("#type-it", {
         speed: 100,
         loop: true,
-        strings: ["Designer", "Developer"],
+        strings: ["مصمم", "المطور"],
         breakLines: false,
     }).go();
 
@@ -32,6 +32,7 @@ $(document).ready(function () {
         autoplay:true,
         responsiveClass:true,
         autoplayHoverPause: true,
+        rtl: true,
         responsive:{
             0:{
                 items:1
@@ -53,6 +54,7 @@ $(document).ready(function () {
         autoplay:true,
         responsiveClass:true,
         autoplayHoverPause: true,
+        rtl: true,
         responsive:{
             0:{
                 items:1
@@ -106,7 +108,22 @@ document.addEventListener("DOMContentLoaded", function (event) {
         }, 50);
     });
 });
-  
+
+var btn = $('#button');
+
+$(window).scroll(function() {
+    if ($(window).scrollTop() > 500) {
+        btn.addClass('show');
+    } else {
+        btn.removeClass('show');
+    }
+});
+
+btn.on('click', function(e) {
+    e.preventDefault();
+    $('html, body').animate({scrollTop:0}, '300');
+});
+
 const d = new Date();
 let year = d.getFullYear();
 document.getElementById("demo").innerHTML = year;
