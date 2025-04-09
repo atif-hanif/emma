@@ -265,6 +265,20 @@ body {
 	right: auto;
 }
 
+.fixed-top .navbar-nav > li a.dropdown-toggle:after {
+	position: relative;
+	background-color: transparent;
+}
+
+.fixed-top .navbar-nav  > li a.dropdown-item {
+	color: var(--black-color);
+	padding: .25rem 1rem;
+}
+
+.fixed-top .navbar-nav > li a.dropdown-toggle.active:after {
+    width: auto;
+}
+
 /* End Header */
 
 /* Start Home */
@@ -554,6 +568,10 @@ body {
 	margin-right: 5px;
 }
 
+.services-section a {
+	color: var(--white-color);
+}
+
 .web-services {
 	background-image: url(../images/services/website-development.webp);
 }
@@ -576,6 +594,60 @@ body {
 
 .app-services {
 	background-image: url(../images/services/app-development.webp);
+}
+
+.myaccordion {
+    margin: 0 auto;
+    border-radius: 0;
+    overflow: hidden;
+}
+
+.myaccordion .card, .myaccordion .card:last-child .card-header {
+    border: none;
+    background: transparent;
+}
+
+.card-header:first-child {
+    border-radius: calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0;
+}
+
+.myaccordion .btn {
+    width: 100%;
+    font-weight: normal;
+    color: #fff;
+    padding: 0;
+    letter-spacing: 0;
+    font-size: 18px;
+    border-radius: 0 !important;
+    border: none;
+    position: relative;
+    background: var(--black-color);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    -webkit-box-shadow: 0px 7px 24px -19px rgba(0, 0, 0, 0.32);
+    -moz-box-shadow: 0px 7px 24px -19px rgba(0, 0, 0, 0.32);
+    box-shadow: 0px 7px 24px -19px rgba(0, 0, 0, 0.32);
+	text-decoration: none;
+}
+
+.myaccordion .card-body {
+    background: rgba(var(--primary-rgb), 0.1);
+    -webkit-box-shadow: 0px 7px 24px -19px rgba(0, 0, 0, 0.22);
+    -moz-box-shadow: 0px 7px 24px -19px rgba(0, 0, 0, 0.22);
+    box-shadow: 0px 7px 24px -19px rgba(0, 0, 0, 0.22);
+}
+
+.myaccordion .card-header .heading {
+    position: relative;
+    font-weight: 300;
+    z-index: 0;
+}
+
+.myaccordion .btn:not(.collapsed) i {
+	rotate: 180deg;
+}
+
+.myaccordion .btn i {
+	rotate: 0deg;
 }
 
 /* End Services */
@@ -706,6 +778,12 @@ body {
 .btn.is-checked {
   	background-color: var(--primary-color);
 	border-color: var(--primary-color);
+}
+
+.client-details {
+	background-color: var(--white-color);
+	color: var(--black-color);
+	text-align: center;
 }
 
 /* End Projects */
@@ -932,11 +1010,16 @@ body {
 /* Start Footer */
 
 .footer {
-	padding-top: 20px;
-	padding-bottom: 20px;
+	padding: 50px 0px;
 	border-top: 1px solid rgba(var(--white-color), 0.1);
 	color: var(--white-color);
 	font-size: 16px;
+}
+
+.footer-bottom {
+	padding-top: 50px;
+	margin-top: 50px;
+	border-top: 1px solid var(--white-color);
 }
 
 /* End Footer */

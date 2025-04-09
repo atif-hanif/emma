@@ -53,6 +53,10 @@
 		margin: 0 auto;
 	}
 
+	.btn-bar {
+		text-align: center;
+	}
+
 }
 
 @media (min-width:768px) and (max-width: 991px) {
@@ -67,6 +71,10 @@
 	.home-section {
 		padding-top: 130px;
 		padding-bottom: 50px;
+	}
+
+	.btn-bar {
+		text-align: center;
 	}
 
 }
