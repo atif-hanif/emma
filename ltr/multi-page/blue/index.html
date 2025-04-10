@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="keywords" content="Emma - Personal Portfolio HTML Template">
     <meta name="description" content="Emma - Personal Portfolio HTML Template">
-    <title>Emma - Personal Portfolio</title>
+    <title>Home - Emma Personal Portfolio</title>
     <link rel="shortcut icon" type="image/x-icon" href="assets/images/logo/favicon.png">
     <link href="assets/vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/vendors/bootstrap/icons/bootstrap-icons.css" rel="stylesheet">
@@ -35,19 +35,27 @@
                 <div class="offcanvas-body">
                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                         <li class="nav-item">
-                            <a class="nav-link" data-scroll-nav="0" href="#home">Home</a>
+                            <a class="nav-link active" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" data-scroll-nav="1" href="#about">About Me</a>
+                            <a class="nav-link" href="about-me.html">About Me</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Services</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="services.html">Services</a></li>
+                                <li><a class="dropdown-item" href="services-details.html">Services Details</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Projects</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="projects.html">Projects</a></li>
+                                <li><a class="dropdown-item" href="project-details.html">Projects Details</a></li>
+                            </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" data-scroll-nav="2" href="#services">Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" data-scroll-nav="3" href="#project">Projects</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" data-scroll-nav="4" href="#contact">Contact</a>
+                            <a class="nav-link" href="contact-me.html">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -57,10 +65,10 @@
     <!-- End Header -->
 
     <!-- Main -->
-    <a id="button"></a>
     <main>
+        <a id="button"></a>
         <!-- start Home Section -->
-        <section class="home-section section" id="home" data-scroll-index="0">
+        <section class="home-section section">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-6">
@@ -69,7 +77,7 @@
                         <h2 class="mb-4">I'm a <span id="type-it"></span></h2>
                         <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                         <div class="btn-bar d-flex align-items-sm-center flex-column flex-sm-row">
-                            <a class="custom-btn" href="#"><span>Get in touch</span> <i class="bi-arrow-right"></i> </a>
+                            <a class="custom-btn" href="contact-me.html"><span>Get in touch</span> <i class="bi-arrow-right"></i> </a>
                             <div class="social-icon ps-sm-4 pt-4 pt-sm-0 d-flex justify-content-center justify-content-sm-start">
                                 <a class="facebook" href="#"><i class="fab fa-facebook-f"></i></a>
                                 <a class="dribbble" href="#"><i class="fab fa-dribbble"></i></a>
@@ -87,7 +95,7 @@
         <!-- End Home Section -->
 
         <!-- Start About Section -->
-        <section class="about-section section light-bg" id="about" data-scroll-index="1">
+        <section class="about-section section light-bg">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-6">
@@ -129,7 +137,7 @@
                                 </div>
                             </div>
                             <div class="btn-bar">
-                                <a class="custom-btn" href="#"><span>Get in touch</span> <i class="bi-arrow-right"></i> </a>
+                                <a class="custom-btn" href="about-me.html"><span>View More</span> <i class="bi-arrow-right"></i> </a>
                             </div>
                         </div>
                     </div>
@@ -138,81 +146,8 @@
         </section>
         <!-- End About Section -->
 
-        <!-- Start Experience Section -->
-        <section class="experience-section section">
-            <div class="container">
-                <div class="section-heading">
-                    <h6><span>Experience</span></h6>
-                    <h2>My Work <span>Experience</span></h2>
-                </div>
-                <div class="row gy-3">
-                    <div class="col-12">
-                        <div class="ex-box">
-                            <div class="row gy-4">
-                                <div class="col-md-4 col-lg-3">
-                                    <div class="ex-left">
-                                        <h4>Developer & Designer</h4>
-                                        <span>Novumlogic | Onsite</span>
-                                        <p>Nov 2022 - Present</p>
-                                        <label>Full time</label>
-                                    </div>
-                                </div>
-                                <div class="col-md-8 col-lg-9">
-                                    <div class="ex-right">
-                                        <h5>About Company</h5>
-                                        <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation .</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12">
-                        <div class="ex-box">
-                            <div class="row gy-4">
-                                <div class="col-md-4 col-lg-3">
-                                    <div class="ex-left">
-                                        <h4>Full Stack Developer</h4>
-                                        <span>Closeloop | Onsite</span>
-                                        <p>Jan 2016 - Oct 2022</p>
-                                        <label>Full time</label>
-                                    </div>
-                                </div>
-                                <div class="col-md-8 col-lg-9">
-                                    <div class="ex-right">
-                                        <h5>About Company</h5>
-                                        <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation .</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12">
-                        <div class="ex-box">
-                            <div class="row gy-4">
-                                <div class="col-md-4 col-lg-3">
-                                    <div class="ex-left">
-                                        <h4>Front End Developer</h4>
-                                        <span>WeLab | Remote</span>
-                                        <p>Jan 2012 - Dec 2015</p>
-                                        <label>Full time</label>
-                                    </div>
-                                </div>
-                                <div class="col-md-8 col-lg-9">
-                                    <div class="ex-right">
-                                        <h5>About Company</h5>
-                                        <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation .</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- End Experience Section -->
-
         <!-- Start Services Section -->
-        <section class="services-section section light-bg" id="services" data-scroll-index="2">
+        <section class="services-section section">
             <div class="container">
                 <div class="section-heading">
                     <h6><span>Services</span></h6>
@@ -220,112 +155,124 @@
                 </div>
                 <div class="row gy-5">
                     <div class="col-sm-6 col-lg-4">
-                        <div class="services-box web-services">
-                            <div class="services-body">
-                                <div class="icon">
-                                    <i class="bi bi-code-square"></i>
-                                </div>
-                                <h5>Website Development</h5>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
-                                <div class="rating">
-                                    <i class="bi-star-fill"></i>
-                                    <i class="bi-star-fill"></i>
-                                    <i class="bi-star-fill"></i>
-                                    <i class="bi-star-fill"></i>
-                                    <i class="bi-star"></i>
+                        <a href="services-details.html">
+                            <div class="services-box web-services">
+                                <div class="services-body">
+                                    <div class="icon">
+                                        <i class="bi bi-code-square"></i>
+                                    </div>
+                                    <h5>Website Development</h5>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                                    <div class="rating">
+                                        <i class="bi-star-fill"></i>
+                                        <i class="bi-star-fill"></i>
+                                        <i class="bi-star-fill"></i>
+                                        <i class="bi-star-fill"></i>
+                                        <i class="bi-star"></i>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="col-sm-6 col-lg-4">
-                        <div class="services-box graphics-services">
-                            <div class="services-body">
-                                <div class="icon">
-                                    <i class="bi bi-palette"></i>
-                                </div>
-                                <h5>Graphics Design</h5>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
-                                <div class="rating">
-                                    <i class="bi-star-fill"></i>
-                                    <i class="bi-star-fill"></i>
-                                    <i class="bi-star-fill"></i>
-                                    <i class="bi-star-fill"></i>
-                                    <i class="bi-star"></i>
+                        <a href="services-details.html">
+                            <div class="services-box graphics-services">
+                                <div class="services-body">
+                                    <div class="icon">
+                                        <i class="bi bi-palette"></i>
+                                    </div>
+                                    <h5>Graphics Design</h5>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                                    <div class="rating">
+                                        <i class="bi-star-fill"></i>
+                                        <i class="bi-star-fill"></i>
+                                        <i class="bi-star-fill"></i>
+                                        <i class="bi-star-fill"></i>
+                                        <i class="bi-star"></i>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="col-sm-6 col-lg-4">
-                        <div class="services-box smm-services">
-                            <div class="services-body">
-                                <div class="icon">
-                                    <i class="bi bi-megaphone"></i>
-                                </div>
-                                <h5>Social Media Marketing</h5>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
-                                <div class="rating">
-                                    <i class="bi-star-fill"></i>
-                                    <i class="bi-star-fill"></i>
-                                    <i class="bi-star-fill"></i>
-                                    <i class="bi-star-fill"></i>
-                                    <i class="bi-star"></i>
+                        <a href="services-details.html">
+                            <div class="services-box smm-services">
+                                <div class="services-body">
+                                    <div class="icon">
+                                        <i class="bi bi-megaphone"></i>
+                                    </div>
+                                    <h5>Social Media Marketing</h5>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                                    <div class="rating">
+                                        <i class="bi-star-fill"></i>
+                                        <i class="bi-star-fill"></i>
+                                        <i class="bi-star-fill"></i>
+                                        <i class="bi-star-fill"></i>
+                                        <i class="bi-star"></i>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="col-sm-6 col-lg-4">
-                        <div class="services-box seo-services">
-                            <div class="services-body">
-                                <div class="icon">
-                                    <i class="bi bi-search"></i>
-                                </div>
-                                <h5>Search Engine Optimization</h5>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
-                                <div class="rating">
-                                    <i class="bi-star-fill"></i>
-                                    <i class="bi-star-fill"></i>
-                                    <i class="bi-star-fill"></i>
-                                    <i class="bi-star-fill"></i>
-                                    <i class="bi-star"></i>
+                        <a href="services-details.html">
+                            <div class="services-box seo-services">
+                                <div class="services-body">
+                                    <div class="icon">
+                                        <i class="bi bi-search"></i>
+                                    </div>
+                                    <h5>Search Engine Optimization</h5>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                                    <div class="rating">
+                                        <i class="bi-star-fill"></i>
+                                        <i class="bi-star-fill"></i>
+                                        <i class="bi-star-fill"></i>
+                                        <i class="bi-star-fill"></i>
+                                        <i class="bi-star"></i>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="col-sm-6 col-lg-4">
-                        <div class="services-box ui-ux-services">
-                            <div class="services-body">
-                                <div class="icon">
-                                    <i class="bi bi-bezier"></i>
-                                </div>
-                                <h5>UI/UX Design</h5>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
-                                <div class="rating">
-                                    <i class="bi-star-fill"></i>
-                                    <i class="bi-star-fill"></i>
-                                    <i class="bi-star-fill"></i>
-                                    <i class="bi-star-fill"></i>
-                                    <i class="bi-star"></i>
+                        <a href="services-details.html">
+                            <div class="services-box ui-ux-services">
+                                <div class="services-body">
+                                    <div class="icon">
+                                        <i class="bi bi-bezier"></i>
+                                    </div>
+                                    <h5>UI/UX Design</h5>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                                    <div class="rating">
+                                        <i class="bi-star-fill"></i>
+                                        <i class="bi-star-fill"></i>
+                                        <i class="bi-star-fill"></i>
+                                        <i class="bi-star-fill"></i>
+                                        <i class="bi-star"></i>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="col-sm-6 col-lg-4">
-                        <div class="services-box app-services">
-                            <div class="services-body">
-                                <div class="icon">
-                                    <i class="bi bi-phone"></i>
-                                </div>
-                                <h5>App Development</h5>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
-                                <div class="rating">
-                                    <i class="bi-star-fill"></i>
-                                    <i class="bi-star-fill"></i>
-                                    <i class="bi-star-fill"></i>
-                                    <i class="bi-star-fill"></i>
-                                    <i class="bi-star"></i>
+                        <a href="services-details.html">
+                            <div class="services-box app-services">
+                                <div class="services-body">
+                                    <div class="icon">
+                                        <i class="bi bi-phone"></i>
+                                    </div>
+                                    <h5>App Development</h5>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                                    <div class="rating">
+                                        <i class="bi-star-fill"></i>
+                                        <i class="bi-star-fill"></i>
+                                        <i class="bi-star-fill"></i>
+                                        <i class="bi-star-fill"></i>
+                                        <i class="bi-star"></i>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -333,7 +280,7 @@
         <!-- End Services Section -->
 
         <!-- Section -->
-        <section class="project-section section" id="project" data-scroll-index="3">
+        <section class="project-section section light-bg">
             <div class="container">
                 <div class="row justify-content-between">
                     <div class="col-lg-5">
@@ -364,7 +311,7 @@
                                     <span>Web Development</span>
                                 </div>
                                 <div class="link">
-                                    <a class="url-link" href="#" target="_blank">
+                                    <a class="url-link" href="project-details.html">
                                         <i class="bi-arrow-right"></i>
                                     </a>
                                 </div>
@@ -382,14 +329,14 @@
                                     <span>Web Development</span>
                                 </div>
                                 <div class="link">
-                                    <a class="url-link" href="#" target="_blank">
+                                    <a class="url-link" href="project-details.html">
                                         <i class="bi-arrow-right"></i>
                                     </a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-lg-4 app column">
+                    <div class="col-sm-6 col-lg-4 mb-4 app column">
                         <div class="project-box">
                             <div class="project-media">
                                 <img src="assets/images/projects/app-1.webp" alt="App" class="img-fluid">
@@ -400,7 +347,7 @@
                                     <span>App Design</span>
                                 </div>
                                 <div class="link">
-                                    <a class="url-link" href="#" target="_blank">
+                                    <a class="url-link" href="project-details.html">
                                         <i class="bi-arrow-right"></i>
                                     </a>
                                 </div>
@@ -418,7 +365,7 @@
                                     <span>Web Development</span>
                                 </div>
                                 <div class="link">
-                                    <a class="url-link" href="#" target="_blank">
+                                    <a class="url-link" href="project-details.html">
                                         <i class="bi-arrow-right"></i>
                                     </a>
                                 </div>
@@ -436,7 +383,7 @@
                                     <span>App Design</span>
                                 </div>
                                 <div class="link">
-                                    <a class="url-link" href="#" target="_blank">
+                                    <a class="url-link" href="project-details.html">
                                         <i class="bi-arrow-right"></i>
                                     </a>
                                 </div>
@@ -455,7 +402,7 @@
                                     <span>Web Development</span>
                                 </div>
                                 <div class="link">
-                                    <a class="url-link" href="#" target="_blank">
+                                    <a class="url-link" href="project-details.html">
                                         <i class="bi-arrow-right"></i>
                                     </a>
                                 </div>
@@ -473,7 +420,7 @@
                                     <span>Web Development</span>
                                 </div>
                                 <div class="link">
-                                    <a class="url-link" href="#" target="_blank">
+                                    <a class="url-link" href="project-details.html">
                                         <i class="bi-arrow-right"></i>
                                     </a>
                                 </div>
@@ -491,7 +438,7 @@
                                     <span>App Design</span>
                                 </div>
                                 <div class="link">
-                                    <a class="url-link" href="#" target="_blank">
+                                    <a class="url-link" href="project-details.html">
                                         <i class="bi-arrow-right"></i>
                                     </a>
                                 </div>
@@ -509,7 +456,7 @@
                                     <span>App Design</span>
                                 </div>
                                 <div class="link">
-                                    <a class="url-link" href="#" target="_blank">
+                                    <a class="url-link" href="project-details.html">
                                         <i class="bi-arrow-right"></i>
                                     </a>
                                 </div>
@@ -522,7 +469,7 @@
         <!-- End Section -->
 
         <!-- Section -->
-        <section class="section effect-section light-bg">
+        <section class="section effect-section">
             <div class="container">
                 <div class="section-heading text-center">
                     <h6><span>Testimonial</span></h6>
@@ -606,38 +553,8 @@
         </section>
         <!-- End Section -->
 
-        <!-- Section -->
-        <div class="py-3 py-md-4 brand-section">
-            <div class="container">
-                <div class="owl-carousel client-carousel eq-height owl-loaded owl-drag">
-                    <div class="p-3 text-center d-flex align-items-center justify-content-center w-100">
-                        <img src="assets/images/clients/brand-1.svg" class="img-fluid" alt="Client">
-                    </div>
-                    <div class="p-3 text-center d-flex align-items-center justify-content-center w-100">
-                        <img src="assets/images/clients/brand-2.svg" class="img-fluid" alt="Client">
-                    </div>
-                    <div class="p-3 text-center d-flex align-items-center justify-content-center w-100">
-                        <img src="assets/images/clients/brand-3.svg" class="img-fluid" alt="Client">
-                    </div>
-                    <div class="p-3 text-center d-flex align-items-center justify-content-center w-100">
-                        <img src="assets/images/clients/brand-4.svg" class="img-fluid" alt="Client">
-                    </div>
-                    <div class="p-3 text-center d-flex align-items-center justify-content-center w-100">
-                        <img src="assets/images/clients/brand-5.svg" class="img-fluid" alt="Client">
-                    </div>
-                    <div class="p-3 text-center d-flex align-items-center justify-content-center w-100">
-                        <img src="assets/images/clients/brand-6.svg" class="img-fluid" alt="Client">
-                    </div>
-                    <div class="p-3 text-center d-flex align-items-center justify-content-center w-100">
-                        <img src="assets/images/clients/brand-7.svg" class="img-fluid" alt="Client">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End Section -->
-
         <!-- Contact Section -->
-        <section class="section contact-section light-bg" id="contact" data-scroll-index="4">
+        <section class="section contact-section light-bg">
             <div class="container">
                 <div class="contact-box rounded oveflow-hidden gray-bg">
                     <div class="row g-0 p-4 p-lg-5">
@@ -694,7 +611,7 @@
                             <div class="contact-info">
                                 <div class="contact-info-in">
                                     <label>Write An Email</label>
-                                    <a href="mailto:sample@domain.com">sample@domain.com</a>
+                                    <a href="mailto:sample@emma.com">sample@emma.com</a>
                                 </div>
                                 <div class="contact-info-in">
                                     <label>Call Me</label>
@@ -719,7 +636,69 @@
     <!-- Start Footer -->
     <footer class="footer">
         <div class="container">
-            <p class="m-0 text-center">© Copyrights <span id="demo"></span>. All Right Reserved. Powered by <a href="https://www.atifhanif.com/" target="_blank">Atif Hanif</a></p>
+            <div class="row">
+                <div class="col-md-6 col-lg-3">
+                    <img class="logo" alt="Logo" src="assets/images/logo/logo.png">
+                    <p class="mt-4 mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <div class="col-md-6 col-lg-3 mt-4 mt-md-0">
+                    <h4>Useful Links</h4>
+                    <ul class="navbar-nav justify-content-end">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about-me.html">About Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="projects.html">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact-me.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-lg-3 mt-4 mt-lg-0">
+                    <h4>My Services</h4>
+                    <ul class="navbar-nav justify-content-end">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Website Development</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Graphics Design</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Social Media Marketing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Search Engine Optimization</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">App Development</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-lg-3 mt-4 mt-lg-0">
+                    <h4>Contact Info</h4>
+                    <ul class="navbar-nav justify-content-end">
+                        <li class="nav-item">
+                            <a class="nav-link" href="mailto:sample@emma.com"><i class="bi bi-envelope pe-2"></i>sample@emma.com</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="tel:+15056468796"><i class="bi bi-phone pe-2"></i>+1 (505) 646 8796</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="bi bi-geo-alt pe-2"></i>New York, United States of America</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="m-0 text-center">© Copyrights <span id="demo"></span>. All Right Reserved. Powered by <a href="https://www.atifhanif.com/" target="_blank">Atif Hanif</a></p>
+            </div>
         </div>
     </footer>
     <!-- End Footer -->
@@ -727,12 +706,12 @@
     <script src="assets/vendors/jquery/jquery.min.js"></script>
     <script src="assets/vendors/appear/jquery.appear.js"></script>
     <script src="assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/vendors/scrollit/scrollIt.min.js"></script>
     <script src="assets/vendors/typeit/typeit.umd.js"></script>
     <script src="assets/vendors/owl-carousel/js/owl.carousel.min.js"></script>
     <script src="assets/vendors/owl-carousel/js/owl.autoheight.js"></script>
     <script src="assets/vendors/owl-carousel/js/owl.autoplay.js"></script>
     <script src="assets/vendors/isotope/isotope.pkgd.min.js"></script>
     <script src="assets/js/custom.js"></script>
+    <script src="assets/js/home.js"></script>
 </body>
 </html>

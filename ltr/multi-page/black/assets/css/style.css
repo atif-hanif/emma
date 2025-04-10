@@ -1,7 +1,6 @@
 /*------------------------------------------------------------------
 Project:    Emma Personal Portfolio HTML Template
 Version:    1.0
-
 -------------------------------------------------------------------*/
 
 :root {
@@ -277,6 +276,11 @@ body {
 
 .fixed-top .navbar-nav > li a.dropdown-toggle.active:after {
     width: auto;
+}
+
+.fixed-top .navbar-nav > li .dropdown-item:active {
+	background-color: var(--black-color);
+	color: var(--white-color);
 }
 
 /* End Header */
@@ -614,7 +618,7 @@ body {
 .myaccordion .btn {
     width: 100%;
     font-weight: normal;
-    color: #fff;
+    color: var(--white-color);
     padding: 0;
     letter-spacing: 0;
     font-size: 18px;
