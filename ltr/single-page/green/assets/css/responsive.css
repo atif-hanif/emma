@@ -71,12 +71,6 @@
 
 }
 
-@media (min-width: 992px) {
-	.contact-section .contact-banner {
-		margin-top: -200px;
-	}
-}
-
 @media (min-width:992px) and (max-width: 1200px) {
 	.fixed-top.menu-open .navbar-nav  {
 		display: -ms-flexbox;

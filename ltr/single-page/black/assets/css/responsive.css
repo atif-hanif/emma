@@ -68,13 +68,6 @@
 		padding-top: 130px;
 		padding-bottom: 50px;
 	}
-
-}
-
-@media (min-width: 992px) {
-	.contact-section .contact-banner {
-		margin-top: -200px;
-	}
 }
 
 @media (min-width:992px) and (max-width: 1200px) {

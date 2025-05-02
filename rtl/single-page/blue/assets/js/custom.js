@@ -72,7 +72,8 @@ $(document).ready(function () {
 
 var $grid = $('.grid').isotope({
     itemSelector: '.column',
-    layoutMode: 'fitRows'
+    layoutMode: 'fitRows',
+    originLeft: false
 });
 
 $('.filters-button-group').on( 'click', 'button', function() {
