@@ -450,57 +450,62 @@ body {
 
 /* Start Experience */
 
-.experience-left {
-	padding: 20px;
-	border-radius: 8px;
-	background: var(--primary-color);
+.experience .timeline {
+    position: relative;
+    list-style-type: none;
 }
 
-.experience-left h4 {
-	margin: 0 0 8px;
-	font-weight: 700;
-}
-
-.experience-left span {
-	font-weight: 400;
-	font-size: 14px;
-	text-transform: uppercase;
-	color: var(--white-color);
-	opacity: 0.8;
-}
-
-.experience-left p {
-	font-weight: 400;
-	font-size: 16px;
-	color: var(--white-color);
-	text-transform: uppercase;
-	margin: 0 0 15px;
-}
-
-.experience-left label {
-	padding: 8px 16px;
-	border-radius: 30px;
-	background: var(--white-color);
-	color: var(--black-color);
-	font-size: 12px;
-	text-transform: uppercase;
-	line-height: 1;
-	font-weight: 600;
-}
-
-.experience-right {
-	align-content: center;
+.experience .timeline::before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    width: 2px;
     height: 100%;
+    z-index: 400;
+    background: var(--white-color);
 }
 
-.experience-right h5 {
-	font-weight: 700;
-	font-size: 32px;
+.experience .timeline ul {
+    list-style-type: none;
 }
 
-.experience-right p {
-	color: var(--white-color);
-	opacity: 0.8;
+.experience .timeline ul li {
+    margin-bottom: 20px;
+}
+
+.experience .timeline > li {
+    margin-bottom: 30px;
+    padding-left: 30px;
+}
+
+.experience .timeline > li:last-child {
+    margin-bottom: 0;
+}
+
+.experience .timeline > li::before {
+    content: '';
+    background: var(--white-color);
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    left: -7px;
+    width: 16px;
+    height: 16px;
+    z-index: 400;
+}
+
+.experience .timeline > li h4 {
+    font-weight: 700;
+}
+
+.experience .timeline > li span {
+    font-size: 18px;
+}
+
+.experience .timeline > li p {
+	margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 /* End Experience */
